@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link rel="stylesheet" href="./styles/mainStyle.css">
+
+   <script defer src="https://unpkg.com/axios/dist/axios.min.js"></script>
+   <script defer src="./scripts/index.js"></script>
+   </script>
+   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYjeVcchvgmCCQgyIVT5QwS76Bnkv_jtg&callback=initMap" async defer></script>
+   
+   
+   <title>Maps | Vlad Poraiko</title>
+</head>
+
+<body>
+
+   <form id="place-name">
+      <input type="text" class="place-name__value" placeholder="name of place" name="name">
+      <button type="submit" class="place-name__submit" name="submit">Ok</button>
+   </form>
+
+   <div id="map"></div>
+
+</body>
+
+</html>
