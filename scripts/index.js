@@ -18,7 +18,7 @@ function initMap() {
       let lat = e.latLng.lat();
       let lng = e.latLng.lng();
 
-      axios.post(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&appid=be95eef5116cba6e82cb7be224025d7c`)
+      axios.post(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&appid=af70ae567a9f4cc672ff78c5a2f91418`)
          .then(function(res) {
             addMarker(res.data);
          });
@@ -36,7 +36,7 @@ form.onsubmit = function(e) {
    if (placeName === '') return;
    
    canAddMarker = false;
-   axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${placeName}&appid=be95eef5116cba6e82cb7be224025d7c`)
+   axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${placeName}&appid=af70ae567a9f4cc672ff78c5a2f91418`)
       .then(res => {
          addMarker(res.data, true);
       })
